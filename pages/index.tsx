@@ -1,9 +1,8 @@
 import type { NextPage } from 'next';
 import { useCallback, useEffect, useState } from 'react';
 import Head from 'next/head';
-import Image from 'next/image';
 import { fetchForm5500Data, Form5500Entry } from '../core';
-import { Card } from './components';
+import Card from '../components/card';
 import styles from '../styles/Home.module.css';
 
 const TITLE = 'Mini Palomar!';

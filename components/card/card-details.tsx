@@ -1,5 +1,5 @@
 import cx from 'clsx';
-import { formatCurrency, CURRENCY_FORMAT_USD_COMPACT } from '../../../core';
+import { formatCurrency, CURRENCY_FORMAT_USD_COMPACT } from '../../core';
 import styles from './card-details.module.css';
 
 const formatCurrencyForDetails = formatCurrency(CURRENCY_FORMAT_USD_COMPACT);
@@ -11,7 +11,7 @@ type Props = {
   isOpen?: boolean;
 };
 
-export const CardDetails = ({
+const CardDetails = ({
   premium,
   participants,
   brokerCommissions,
@@ -35,3 +35,5 @@ export const CardDetails = ({
     </div>
   );
 };
+
+export default CardDetails;

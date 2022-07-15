@@ -1,4 +1,4 @@
-import { formatNumber } from '../../../core';
+import { formatNumber } from '../../core';
 import styles from './card-summary.module.css';
 
 type Props = {
@@ -7,7 +7,7 @@ type Props = {
   year: number;
 };
 
-export const CardSummary = ({ state, employees, year }: Props) => {
+const CardSummary = ({ state, employees, year }: Props) => {
   return (
     <div className={styles.container}>
       <div className={styles.datum}>
@@ -25,3 +25,5 @@ export const CardSummary = ({ state, employees, year }: Props) => {
     </div>
   );
 };
+
+export default CardSummary;

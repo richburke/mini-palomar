@@ -24,14 +24,3 @@
   margin: 0;
   border-top: 1px solid var(--card-divider-color);
 }
-
-.details {
-  max-height: 0;
-  transition: max-height 0.15s ease-out;
-  overflow: hidden;
-}
-
-.details-open {
-  max-height: 500px;
-  transition: max-height 0.25s ease-in;
-}

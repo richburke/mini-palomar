@@ -7,7 +7,7 @@ type Props = {
   onClick: (setting: boolean) => void;
 };
 
-export const CardToggle = ({ toggle, onClick }: Props) => {
+const CardToggle = ({ toggle, onClick }: Props) => {
   return (
     <div
       role="button"
@@ -21,3 +21,5 @@ export const CardToggle = ({ toggle, onClick }: Props) => {
     </div>
   );
 };
+
+export default CardToggle;

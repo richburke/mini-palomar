@@ -1,15 +1,15 @@
 import { useState } from 'react';
-import { Form5500Entry } from '../../../core';
-import { CardDetails } from './card-details';
-import { CardSummary } from './card-summary';
-import { CardToggle } from './card-toggle';
+import { Form5500Entry } from '../../core';
+import CardDetails from './card-details';
+import CardSummary from './card-summary';
+import CardToggle from './card-toggle';
 import styles from './card.module.css';
 
 type Props = {
   info: Form5500Entry;
 };
 
-export const Card = ({ info }: Props) => {
+const Card = ({ info }: Props) => {
   const [toggle, setToggle] = useState(false);
 
   const {
@@ -43,3 +43,5 @@ export const Card = ({ info }: Props) => {
     </div>
   );
 };
+
+export default Card;
