@@ -1,0 +1,37 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--card-border-color);
+  align-items: center;
+  padding: 40px 10px 10px 10px;
+  margin-top: 40px;
+}
+
+.container:first-child {
+  margin-top: 0;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1;
+  margin: 0 0 36px;
+}
+
+.divider {
+  width: 100%;
+  margin: 0;
+  border-top: 1px solid var(--card-divider-color);
+}
+
+.details {
+  max-height: 0;
+  transition: max-height 0.15s ease-out;
+  overflow: hidden;
+}
+
+.details-open {
+  max-height: 500px;
+  transition: max-height 0.25s ease-in;
+}

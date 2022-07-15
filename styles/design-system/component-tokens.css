@@ -1,0 +1,5 @@
+:root {
+  --card-border-color: var(--color-primary);
+  --card-divider-color: var(--color-secondary);
+  --card-toggle-color: var(--color-accent);
+}

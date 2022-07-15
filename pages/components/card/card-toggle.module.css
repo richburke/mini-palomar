@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  min-height: 4rem;
+}
+
+.label,
+.icon {
+  color: var(--card-toggle-color);
+}
+
+.label {
+  font-size: 1.15rem;
+  white-space: nowrap;
+}
+
+.iconContainer {
+  width: 100%;
+  height: 100%;
+}
+
+.icon {
+  height: 2.5rem;
+  width: 2.5rem;
+  margin-top: 6px;
+}
+
+.open {
+  animation: rotateOpen ease-in-out 0.3s 1 normal forwards;
+  margin-top: 4px;
+}
+
+@keyframes rotateOpen {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}

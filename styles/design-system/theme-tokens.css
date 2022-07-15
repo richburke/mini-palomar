@@ -1,0 +1,5 @@
+:root {
+  --color-primary: var(--color-black);
+  --color-secondary: var(--color-black-tint-1);
+  --color-accent: var(--color-blue);
+}

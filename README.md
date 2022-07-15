@@ -1,34 +1,14 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Mini Palomar!
 
-## Getting Started
+## If this was intended for production... :)
 
-First, run the development server:
+- I'd add a proper loading state indicator. We're fetching the data asynchronously, and that could take awhile--for a number of possible reasons. I'd want to let the user know that the web app is working on their request.
+- We're getting a fair amount of data here, too much to display on one page
+  comfortably. Something we could do would be to add a "pager", allowing the user to be able to step through the results.
+- An advanced version might include sorting and filtering.
+- From a team and code organizing perspective, I'd want to confirm that I'm structuring the code in a way that's consistent with the team's way of doing things. For example, I could definitely understand if the organization of my /components/card/ directory would be something the team would have different opinions about.
+- I'd confirm with the Designer that I've gotten their intentions correct. I'm not sure in this case I have--at least in terms of desired spacing and font sizes.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## Something to note
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+As a potential starting point of a discussion, I added a few simple files that mimic a Design System. Jason and I talked about Design Systems, so I wanted to provide at least a simple sample here.

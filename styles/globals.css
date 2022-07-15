@@ -1,3 +1,7 @@
+@import url('./design-system/base-tokens.css');
+@import url('./design-system/theme-tokens.css');
+@import url('./design-system/component-tokens.css');
+
 html,
 body {
   padding: 0;
